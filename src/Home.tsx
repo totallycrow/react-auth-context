@@ -3,7 +3,12 @@ import { useAuth } from "./useAuth";
 
 export default function Home() {
   // @ts-ignore
-  const { user } = useAuth();
+  const { user, logout } = useAuth();
   console.log(user);
-  return <div>Home</div>;
+  return (
+    <div>
+      Home
+      <button onClick={logout}>LOGOUT</button>
+    </div>
+  );
 }

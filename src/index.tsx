@@ -10,6 +10,7 @@ import {
   BrowserRouter,
 } from "react-router-dom";
 import { AuthProvider } from "./useAuth";
+import Cookies from "js-cookie";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

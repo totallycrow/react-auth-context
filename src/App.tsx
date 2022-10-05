@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./Login";
 import Home from "./Home";
 import { ProtectedRoute } from "./ProtectedRoute";
+import Cookies from "js-cookie";
 
 function App() {
   return (
