@@ -11,7 +11,6 @@ export const ProtectedRoute = ({ children }: any) => {
 
   if (cookie !== "jankowalski@gmail.com") {
     setLoginFailed(true);
-    // user is not authenticated
 
     return <Navigate to="/login" />;
   }
